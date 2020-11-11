@@ -1,45 +1,40 @@
-const searchFrom = document.querySelector('.search');
-const input = document.querySelector('#search-terms');
-const submit = document.querySelector('#submit');
-const newsList = document.querySelector('.news-list');
+const searchFrom = document.querySelector('.search'); 
+const input = document.querySelector("#search-terms");
+const submit = document.querySelector("#submit");
+const newsList = document.querySelector(".news-list");
 
+searchFrom.addEventListener("submit", retrieve);
 
-searchFrom.addEventListener('submit', retrieve)
-
-function retrieve(e){
-    console.log('retrieve')
-    if(input.value == ''){
-        alert('Please enter a topic!')
-        return
-    }
-
-    newsList.innerHTML = ''
-    e.preventDefault()
-    
-    const apiKey = '0e1f0573923b4f80a447ec0fc730061c'
-    let topic = input.value;
-
-
-    let url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`
-
-    fetch(url).then((response)=>{
-        console.log('inside promise')
-        return response.json()
-    }).then((dataNews)=>{
-        // console.log(dataNews.articles)
-        for(var i = 0; i < dataNews.articles.length; i++){
-            console.log(dataNews.articles[i])
-            let li = document.createElement('li');
-            let a = document.createElement('a');
-            a.setAttribute('href', dataNews.articles[i].url);
-            a.setAttribute('target', '_blank');
-            a.innerHTML = dataNews.articles[i].title;
-            li.appendChild(a);
-            newsList.appendChild(li)
+function retrieve(e) {
+e.preventDefault();
+console.log("retrieve");
+if (input.value == "") {
+    alert("Please enter a topic!");
+    return;
 }
-}).catch((error)=> {
-    console.log(error)
+
+
+const apiKey = '03t2vzx89s51l3pm63er9rpxw'
+let topic = input.value;
+newsList.innerHTML = "";
+fetch(`http://api.datanews.io/v1/headlines?apiKey=${apiKey}&language=en&q=${topic}`)
+.then(res => res.json()).then(dataNews => {
+console.log(dataNews)
+
+for (var i = 0; i < dataNews.hits.length; i++) {
+        console.log(dataNews.hits[i]);
+        let li = document.createElement("li");
+        let a = document.createElement("a");
+        a.setAttribute("href", dataNews.hits[i].url);
+        a.setAttribute("target", "_blank");
+        a.innerHTML = dataNews.hits[i].title;
+        li.appendChild(a);
+        newsList.appendChild(li);
+}
 })
-
+.catch((error) => {
+console.log(error);
+    });
 }
+
 
