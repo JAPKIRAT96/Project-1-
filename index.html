@@ -15,10 +15,8 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-
     <title>Lazy Loader's News</title>
   </head>
-
   <body>
     <!-- Navbar starts here  -->
     <nav class="navbar navbar-light bg-light">
@@ -33,34 +31,45 @@
         />
         Lazy Loader's News
       </a>
-
       <!-- tLinks with news -->
 
       <a class="nav-link" href="./index.html">Home</a>
-
-      <a class="nav-link" href="./Assets/Sports-info/sports.html">Sports</a>
-
-      <a class="nav-link" href="./Assets/Entertainment-info/entertainment.html"
-        >Entertainment</a
-      >
-
+      <a class="nav-link" href="https://www.espn.com/nba/">Sports</a>
+      <a class="nav-link" href="https://www.eonline.com/news">Entertainment</a>
       <a class="nav-link" href="./Assets/Weather-info/weather.html">Weather</a>
 
       <!-- search form -->
-      <form class="form-inline">
+      <form class="search form-inline">
         <input
-          class="form-control mr-sm-2"
+          class="input form-control mr-sm-2"
           type="search"
           placeholder="Search News"
           aria-label="Search"
+          id="search-terms"
         />
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
+        <button class="btn btn-outline-primary my-2 my-sm-0" id="submit">
           Search
         </button>
       </form>
     </nav>
-
-    <div class="jumbotron" id="main-info"></div>
+    <hr />
+    <div class="jumbotron" id="main-info">
+      <div class="container">
+        <ul class="news-list"></ul>
+      </div>
+    </div>
+    <hr />
+    <!-- Footer Starts Here  -->
+    <footer class="footer text-center py-3 bg-light sticky-footer">
+      <div class="container" id="footer-container">
+        <span class="text-muted"
+          >Copyright &copy; 2020
+          <a class="text-info" href="https://github.com/twopcz"
+            >Lazy Loader's News</a
+          ></span
+        >
+      </div>
+    </footer>
 
     <!-- Script Links for jquery and Bootstap -->
     <script
