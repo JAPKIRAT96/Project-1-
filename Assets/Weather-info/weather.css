@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 90%;
+}
+
+.navbar {
+  background-color: #2d3338;
+  height: 10vh;
+  color: #dad9d1;
+  font-size: 1rem;
+  width: 100vw;
+  font-weight: bold;
+}
+.weather-dashboard {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-wrapper {
+  padding: 0px;
+  font-size: 15px;
+}
+.sidebar {
+  background-color: #f8f9fa;
+  height: 100vh;
+}
+.main-bar {
+  background-color: #ffffff;
+  width: 75vw;
+  height: 100vh;
+}
+
+.main-top {
+  width: 74vw;
+  height: 40%;
+}
+.main-buttom {
+  width: 74vw;
+}
+.card-col {
+  background-color: #007bff;
+}
+.search-button {
+  margin-left: -0.5rem !important;
+}
+.forcastCard {
+  width: 10rem;
+}
+.uv {
+  background-color: #dc3545;
+  height: 1.5rem;
+  width: 3rem;
+  padding-left: 0.5rem;
+  border-radius: 2px;
+  color: #ffffff;
+}
+.search {
+  font-size: 35px;
+}
