@@ -66,3 +66,10 @@ body {
 .search {
   font-size: 35px;
 }
+#footer-links {
+  float: left;
+  margin-right: 4px;
+}
+.feedback {
+  float: right;
+}
