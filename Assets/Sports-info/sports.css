@@ -18,7 +18,8 @@
     /* background-color: #000000; */
     }
 h1,h4,h6,p {
-    color: whitesmoke;
+    /* color: whitesmoke; */
+    padding-top: 25px;
 }
 .center_blog_right_last_2 p{
 font-size:16px;
