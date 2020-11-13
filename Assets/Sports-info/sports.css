@@ -10,11 +10,9 @@
 }
 
 
-/* jumbotron container {
-    margin-top: 0px;
-    position: relative;
-    top:100px;
-} */
+ container {
+  float: right; 
+ }
 #center{
     margin-top:10px;
     background-color: #000000;
