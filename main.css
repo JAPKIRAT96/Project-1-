@@ -22,3 +22,11 @@ h3 {
 hr {
   margin: 10%;
 }
+
+#footer-links {
+  float: left;
+  margin-right: 4px;
+}
+.feedback {
+  float: right;
+}
