@@ -47,10 +47,12 @@ The footer will contain different social media apps from our site that will lead
 This website was made possible by our team, using front-end development to create our website. (HTML, CSS, Javascript)
 
 **APIs used:**
+  * OpenWeather API
+  * DataNews API
 
-* OpenWeather API
-* DataNews API
-
-***Lazy Loader Developer**
-
+## The Lazy Loader Team
+  * Nathanial Meadows
+  * Ryan Reyes
+  * Sudan Dhusal
+  * Japkirat Singh
 
