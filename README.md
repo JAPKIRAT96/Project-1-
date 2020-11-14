@@ -38,4 +38,19 @@ The weather will display the current day in the main box, it will display the gi
 
 # Footer 
 
- 
+The footer will contain different social media apps from our site that will lead to our official social media sites for some extra promotion within our site. The footer includes a feedback form which users can send in their concerns within the websites, it would give an extra benefit to our site and we will continue to improve our website whenever possible. 
+
+**NOTE:** The feedback form is currently not working and it'll be fixed shortly. Users cannot submit the form and will not be sent to us. 
+
+# Functions 
+
+This website was made possible by our team, using front-end development to create our website. (HTML, CSS, Javascript)
+
+**APIs used:**
+
+* OpenWeather API
+* DataNews API
+
+***Lazy Loader Developer**
+
+
