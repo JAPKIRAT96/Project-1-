@@ -13,9 +13,7 @@ Our users will be able to access through varieties of different articles based o
 
 # Home Page/Search Bar
 
-You will be introduced to an empty home page to greet users who enters the webpage. This how the normal home page would look when the user enters, just a basic layout to greet
-users. However, if user wants to find an article that's not included in the Lazy Loader's News Navbar, the user can use the search bar to find a specific article or genre they 
-are looking for. This will fill up the home page with different news articles of the specific interests. The search will be available in every section except for the weather section, and the search will generate different articles on its the chosen section (Not to a seperate HTML Website). 
+You will be introduced to an empty home page to greet users who enters the webpage. This how the normal home page would look when the user enters, just a basic layout to greet users. However, if user wants to find an article that's not included in the Lazy Loader's News Navbar, the user can use the search bar to find a specific article or genre they are looking for. This will fill up the home page with different news articles of the specific interests. The search will be available in every section except for the weather section and the entertainment section, and the search will generate different articles on its the chosen section (Not to a seperate HTML Website). 
 
 
 # Sports Section
@@ -23,3 +21,13 @@ are looking for. This will fill up the home page with different news articles of
 If the user clicks on the Sports Section, the user will be given different articles dedicated to sports only. When the user enters, the main article will display the picture and its own text which is used to display the article as a featured article that our team has put together. There are various of social medias available on the left side of the featured article, allowing you to share the article with friends or family. There is a placeholder "Like" ratio for users to put their "Likes" on the website and users can also email the article to anyone as well. There are other articles listed on the right side of the featured article, which will lead to other news sites that will take you to the dedicated article. 
 
 NOTE: Articles on the right will only display if the user uses the search bar to search for the articles.
+
+# Entertainment Section
+
+The section will link to another website, this way our users will be directed to a familiar source or a source that the user has never encountered. We try to put sources that are more mainstream, at the moment we have only set it to one site, but later on we will add more sources that will be randomized in order for our users to go through different articles sites to diversify the viewer experience. This section will focus on celebrity news or any entertainment media 
+
+NOTE: You cannot access back to the website once you click on the Entertainment section, this will be fixed in the near future.
+
+# Weather Section 
+
+This section will help users track
